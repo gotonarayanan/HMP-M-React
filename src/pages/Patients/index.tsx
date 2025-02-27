@@ -1,18 +1,18 @@
 import PageBreadcrumb from "../../components/common/PageBreadCrumb";
 import PageMeta from "../../components/common/PageMeta";
-import UserTable from "../../components/tables/UserTable";
+import PatientTable from "../../components/tables/PatientTable";
 
-export default function Users() {
+export default function Patients() {
   return (
     <div>
       <PageMeta
-        title="HMP | Users"
-        description="People management system user control"
+        title="HMP | Patients"
+        description="People management system Patients control"
       />
-      <PageBreadcrumb pageTitle="Users" />
+      <PageBreadcrumb pageTitle="Patients" />
       <div className="grid gap-6">
         <div className="space-y-3">
-          <UserTable />
+          <PatientTable />
         </div>
       </div>
     </div>

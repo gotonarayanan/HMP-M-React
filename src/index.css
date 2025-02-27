@@ -578,3 +578,17 @@ span.flatpickr-weekday,
 .text-align-end {
   text-align: end;
 }
+
+.custom-btn-primary {
+  padding: 5px !important;
+  background: aliceblue;
+  color: #62aff3;
+  font-size: small;
+}
+
+.custom-btn-danger {
+  padding: 5px !important;
+  background: rgb(248, 222, 222);
+  color: #f8515a;
+  font-size: small;
+}

@@ -7,13 +7,13 @@ import {
   ChevronDownIcon,
   GridIcon,
   HorizontaLDots,
-  PharmacyIcon,
+  CalenderIcon,
   PieChartIcon,
   PlugInIcon,
-  PeopleManageIcon,
-  AppointmentIcon,
-  BillingIcon,
-  LabIcon,
+  GroupIcon,
+  TaskIcon,
+  PencilIcon,
+  InfoIcon,
 } from "../icons";
 import { useSidebar } from "../context/SidebarContext";
 // import SidebarWidget from "./SidebarWidget";
@@ -33,7 +33,7 @@ const navItems: NavItem[] = [
   },
   {
     name: "People Management",
-    icon: <PeopleManageIcon />,
+    icon: <GroupIcon />,
     subItems: [
       { name: "Users", path: "/users", pro: false },
       { name: "Patients", path: "/patients", pro: false },
@@ -42,22 +42,22 @@ const navItems: NavItem[] = [
     ],
   },
   {
-    icon: <AppointmentIcon />,
+    icon: <CalenderIcon />,
     name: "Appointment",
     path: "/appointments",
   },
   {
-    icon: <BillingIcon />,
+    icon: <TaskIcon />,
     name: "Billing",
     path: "/billing",
   },
   {
-    icon: <PharmacyIcon />,
+    icon: <PencilIcon />,
     name: "Pharmacy",
     path: "/pharmacy",
   },
   {
-    icon: <LabIcon />,
+    icon: <InfoIcon />,
     name: "Lab",
     path: "/lab",
   },
