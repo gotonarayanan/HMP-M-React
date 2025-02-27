@@ -52,9 +52,17 @@ import { ReactComponent as ChatIcon } from "./chat.svg?react";
 import { ReactComponent as MoreDotIcon } from "./moredot.svg?react";
 import { ReactComponent as AlertHexaIcon } from "./alert-hexa.svg?react";
 import { ReactComponent as ErrorHexaIcon } from "./info-hexa.svg?react";
-import { ReactComponent as PeopleManage } from "./people_manage.svg?react";
-
+import { ReactComponent as PharmacyIcon } from "./delivery-man.svg?react";
+import { ReactComponent as PeopleManageIcon } from "./team.svg?react";
+import { ReactComponent as LabIcon } from "./science-management.svg?react";
+import { ReactComponent as BillingIcon } from "./payment.svg?react";
+import { ReactComponent as AppointmentIcon } from "./appointment-request.svg?react";
 export {
+  AppointmentIcon,
+  BillingIcon,
+  LabIcon,
+  PeopleManageIcon,
+  PharmacyIcon,
   ErrorHexaIcon,
   AlertHexaIcon,
   MoreDotIcon,
@@ -109,5 +117,4 @@ export {
   HorizontaLDots,
   ChevronUpIcon,
   ChatIcon,
-  PeopleManage,
 };

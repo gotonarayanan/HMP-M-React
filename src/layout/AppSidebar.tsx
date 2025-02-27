@@ -4,16 +4,16 @@ import { Link, useLocation } from "react-router";
 // Assume these icons are imported from an icon library
 import {
   BoxCubeIcon,
-  CalenderIcon,
   ChevronDownIcon,
   GridIcon,
   HorizontaLDots,
-  ListIcon,
-  // PageIcon,
+  PharmacyIcon,
   PieChartIcon,
   PlugInIcon,
-  // TableIcon,
-  // UserCircleIcon,
+  PeopleManageIcon,
+  AppointmentIcon,
+  BillingIcon,
+  LabIcon,
 } from "../icons";
 import { useSidebar } from "../context/SidebarContext";
 // import SidebarWidget from "./SidebarWidget";
@@ -33,31 +33,31 @@ const navItems: NavItem[] = [
   },
   {
     name: "People Management",
-    icon: <ListIcon />,
+    icon: <PeopleManageIcon />,
     subItems: [
       { name: "Users", path: "/users", pro: false },
-      { name: "Patients", path: "/users", pro: false },
+      { name: "Patients", path: "/patients", pro: false },
       { name: "Doctor", path: "/doctor", pro: false },
-      { name: "Staffs", path: "/users", pro: false },
+      { name: "Staffs", path: "/staffs", pro: false },
     ],
   },
   {
-    icon: <CalenderIcon />,
+    icon: <AppointmentIcon />,
     name: "Appointment",
     path: "/appointments",
   },
   {
-    icon: <CalenderIcon />,
+    icon: <BillingIcon />,
     name: "Billing",
     path: "/billing",
   },
   {
-    icon: <CalenderIcon />,
+    icon: <PharmacyIcon />,
     name: "Pharmacy",
     path: "/pharmacy",
   },
   {
-    icon: <CalenderIcon />,
+    icon: <LabIcon />,
     name: "Lab",
     path: "/lab",
   },

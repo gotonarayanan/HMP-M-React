@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>payment</title>
+	<defs>
+		<image  width="28" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAAXNSR0IB2cksfwAAAf5QTFRFBRJDBRRCJDJaFCNNGSdRM0BlGyhSBRRCAAAABRRCdICXz9jcuMHKV2KA4+bq7O/x0dbdPUltBRRCBRRCprC9bXiR1drg5ejs2Nzia3WPBRRCBRRCp7G91dng6ezvtbvHbXeRbHWQBRRCjpWpU159MDxibHaQys/X1dnfZnCMvMLNb3iTxsvUfYad5+rt4OPnUl19lp6wb3mT6+7x4OPo6+7wZnKMfoqeTVl5qrG/YGqHLjthdn+Y3eHmBRRCBRRCJTNa5Ojr5+vtwsjSoai4jJSoLDlgnqW2g4yiwcfRcHmTr7XCi5OndH6W5OfrgoqhMT1jHStUYmyI3eHlSFR13ODlyM3WgYmgXWeF3+Pn5unsLDlf6Ovux8zVvsPOVWB/BRRCBRRCBRRCdH2WSlZ3SFN1Nz9kXSpFdSc8cCY8KRpABRRCsrjFWidC4Tg15Tk1yTQ3BRRCoy45iyo6jys60jY2ZG6KKjdeN0Jmp669ho6keSc7cCY8S1Z3bCU8hY6jz9TbTll5SlV2WCxI1zc2ho+kT1p6YEdjzzU2v8TPvcPOWj9b0TY2Ph5AqC854jk1qrC/xMnTub/LFCJNP0tuHCpULTpgZnCMXmiFJjNbJDFZVV9+WmWCBRRCBRRCBRRCBRRCBRRCBRRCBRRCBRRCKhpAiCk6BRRCBRRCBRRCLytt3wAAAKp0Uk5TAH/z////yzoAQ//////////SCmX//////+UZZv//////5hr///////////////////////////////////8XTbj//////5n///////9u////////hP///3n//5n////rRzMy/////////uAg//////9k/////////////1r/W///////////////////////////meWRr/z3op3r/ysEDkY+CDRy4P9VVgGjCanTAAABaklEQVR4nGNkYAQBBhQAE2DkZMSUBfK/gWlhxu8MXIw/wYIcQDYYcDG+A0tKM75n4OL4BGLzMzK+gxghxPgMXVIEZP4L7JKSENsfYpVUgEjeQpaUZmRgfAo2VgskdwnZWDugExjvgiSNGBnfCzGeQpbkABJ210GSFmBTD6NLujIeBLEdQJJ70CV9GHeBvefOuIOBAV0ygHEbWMz79y5MyeBDn6Ch6gsJZVBgM945BZMMgQnCowDEhkq6nQAJ+CPHD0ISwvfnYgeSzEDhX0B6DUwyvR8kWfQRJAmK4i9AmhebTr5JEJofQ5KZjZVpQiHINa/hxpadBUmaPGJnYZsGVlfB+HwNhk5WtidK/fbWQJ2PMSXZ2N5K9lWx3FZjfACVVBVgrGNo7rVlAjtEuLf6HjvcK92MMHAGJCjCwsL8EC4ZaQNJu4yMR9mAXFGg5AMGhv9rwZJwYJZ++j+M/d+CEVWSIZltFZzdywgAGcFui2oLjwAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="1" y="1"/>
+</svg>
