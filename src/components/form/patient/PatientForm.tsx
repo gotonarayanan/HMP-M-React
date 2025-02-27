@@ -5,13 +5,16 @@ import Input from "../input/InputField";
 import TextArea from "../input/TextArea";
 import Select from "../Select";
 import Button from "../../ui/button/Button";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function PatientForm() {
+  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [message, setMessage] = useState("");
   const options = [
-    { value: "Doctor", label: "Doctor" },
-    { value: "Staff", label: "Staff" },
-    { value: "Patient", label: "Patient" },
+    { value: "Male", label: "Male" },
+    { value: "Female", label: "Female" },
+    { value: "Transgender", label: "Transgender" },
   ];
   const handleSelectChange = (value: string) => {
     console.log("Selected value:", value);
@@ -27,16 +30,16 @@ export default function PatientForm() {
     <div className="overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-white/[0.05] dark:bg-white/[0.03]">
       <div className="max-w-full overflow-x-auto">
         <div className="min-w-100%">
-          <ComponentCard title="Users">
+          <ComponentCard title="Patients">
             <form>
               <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
                 <div className="space-y-6">
                   <div>
-                    <Label htmlFor="username">User Name</Label>
+                    <Label htmlFor="username">Patient Name</Label>
                     <Input
                       type="text"
                       id="username"
-                      placeholder="type your username"
+                      placeholder="type your name"
                     />
                   </div>
                   <div>
@@ -48,13 +51,18 @@ export default function PatientForm() {
                     />
                   </div>
                   <div>
-                    <Label>Address</Label>
-                    <TextArea
-                      value={message}
-                      onChange={(value) => setMessage(value)}
-                      rows={6}
-                      placeholder="type your address"
+                    <Label htmlFor="mobile">Date of Birth</Label>
+                    <DatePicker
+                      selected={selectedDate}
+                      onChange={(date) => setSelectedDate(date)}
+                      dateFormat="dd/MM/yyyy"
+                      placeholderText="Select a date"
+                      className="rounded bg-transparent text-gray-800 border-gray-300 focus:border-brand-300 focus:ring-brand-500/20 dark:border-gray-700 dark:text-white/90  dark:focus:border-brand-800 w-100"
                     />
+                  </div>
+                  <div>
+                    <Label htmlFor="age">Age</Label>
+                    <Input type="number" id="age" placeholder="type your age" />
                   </div>
                 </div>
                 <div className="space-y-6">
@@ -67,12 +75,29 @@ export default function PatientForm() {
                     />
                   </div>
                   <div>
-                    <Label>Select Type</Label>
+                    <Label htmlFor="mobile">Emergency Contact</Label>
+                    <Input
+                      type="text"
+                      id="emg_mobile"
+                      placeholder="type your contact number"
+                    />
+                  </div>
+                  <div>
+                    <Label>Select Gender</Label>
                     <Select
                       options={options}
                       placeholder="Select an option"
                       onChange={handleSelectChange}
                       className="dark:bg-dark-900"
+                    />
+                  </div>
+                  <div>
+                    <Label>Address</Label>
+                    <TextArea
+                      value={message}
+                      onChange={(value) => setMessage(value)}
+                      rows={6}
+                      placeholder="type your address"
                     />
                   </div>
                 </div>

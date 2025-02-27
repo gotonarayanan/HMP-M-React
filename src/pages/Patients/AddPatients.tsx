@@ -1,18 +1,18 @@
 import PageBreadcrumb from "../../components/common/PageBreadCrumb";
 import PageMeta from "../../components/common/PageMeta";
-import UserForm from "../../components/form/user/UserForm";
+import PatientForm from "../../components/form/patient/PatientForm";
 
-export default function AddUsers() {
+export default function AddPatients() {
   return (
     <div>
       <PageMeta
-        title="HMP | CreateUsers"
-        description="People management system user control"
+        title="HMP | Create Patient"
+        description="People management system patients control"
       />
-      <PageBreadcrumb pageTitle="Add Users" />
+      <PageBreadcrumb pageTitle="Add Patients" />
       <div className="grid gap-6">
         <div className="space-y-3">
-          <UserForm />
+          <PatientForm />
         </div>
       </div>
     </div>

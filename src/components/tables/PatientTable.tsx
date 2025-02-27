@@ -74,7 +74,7 @@ export default function PatientTable() {
   return (
     <div className="overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-white/[0.05] dark:bg-white/[0.03]">
       <div className="p-5 text-align-end">
-        <Link to="/users/add">
+        <Link to="/patients/add">
           <Button size="sm" variant="outline" startIcon={<PlusIcon />}>
             Add
           </Button>
@@ -130,16 +130,7 @@ export default function PatientTable() {
               {tableData.map((order) => (
                 <TableRow key={order.id}>
                   <TableCell className="px-5 py-4 sm:px-6 text-start">
-                    <div className="flex items-center gap-3">
-                      <div>
-                        <span className="block font-medium text-gray-800 text-theme-sm dark:text-white/90">
-                          {order.user_name}
-                        </span>
-                        <span className="block text-gray-500 text-theme-xs dark:text-gray-400">
-                          {order.role}
-                        </span>
-                      </div>
-                    </div>
+                    {order.user_name}
                   </TableCell>
                   <TableCell className="px-4 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
                     {order.email}

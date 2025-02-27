@@ -592,3 +592,9 @@ span.flatpickr-weekday,
   color: #f8515a;
   font-size: small;
 }
+.react-datepicker-wrapper {
+  width: 100%;
+}
+.w-100 {
+  width: 100%;
+}
