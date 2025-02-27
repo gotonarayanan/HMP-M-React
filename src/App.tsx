@@ -21,6 +21,10 @@ import Home from "./pages/Dashboard/Home";
 import UsersManagement from "./pages/User/UsersManagement";
 import Patients from "./pages/Patients";
 import AddPatients from "./pages/Patients/AddPatients";
+import Doctor from "./pages/Doctor";
+import AddDoctor from "./pages/Doctor/Add";
+import Staff from "./pages/Staffs";
+import AddStaffs from "./pages/Staffs/Add";
 
 export default function App() {
   return (
@@ -35,6 +39,14 @@ export default function App() {
             {/* Patients */}
             <Route path="/patients" element={<Patients />} />
             <Route path="/patients/add" element={<AddPatients />} />
+
+            {/* Doctors */}
+            <Route path="/doctors" element={<Doctor />} />
+            <Route path="/doctors/add" element={<AddDoctor />} />
+
+            {/* Staffs */}
+            <Route path="/staffs" element={<Staff />} />
+            <Route path="/staffs/add" element={<AddStaffs />} />
 
             {/* Others Page */}
             <Route path="/profile" element={<UserProfiles />} />
