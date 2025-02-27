@@ -6,23 +6,19 @@ import {
   TableRow,
 } from "../ui/table";
 import Button from "../../components/ui/button/Button";
-import { PlusIcon } from "../../icons";
+import { PlusIcon, PencilIcon, TrashBinIcon } from "../../icons";
+import { Link } from "react-router-dom";
 
 import Badge from "../ui/badge/Badge";
 
 interface Order {
   id: number;
-  user: {
-    image: string;
-    name: string;
-    role: string;
-  };
-  projectName: string;
-  team: {
-    images: string[];
-  };
+  user_name: string;
+  email: string;
+  contact: string;
+  role: string;
+  address: string;
   status: string;
-  budget: string;
 }
 
 // Define the table data using the interface
@@ -31,7 +27,7 @@ const tableData: Order[] = [
     id: 1,
     user_name: "Lindsey Curtis",
     email: "test@gmail.com",
-    role: "Web Designer",
+    role: "Doctor",
     address: "3.9K",
     contact: "9789641697",
     status: "Active",
@@ -74,17 +70,15 @@ const tableData: Order[] = [
   },
 ];
 
-export default function UserTable() {
+export default function PatientTable() {
   return (
     <div className="overflow-hidden rounded-xl border border-gray-200 bg-white dark:border-white/[0.05] dark:bg-white/[0.03]">
       <div className="p-5 text-align-end">
-        <Button
-          size="sm"
-          variant="outline"
-          startIcon={<PlusIcon className="size-5" />}
-        >
-          Add
-        </Button>
+        <Link to="/users/add">
+          <Button size="sm" variant="outline" startIcon={<PlusIcon />}>
+            Add
+          </Button>
+        </Link>
       </div>
       <div className="max-w-full overflow-x-auto">
         <div className="min-w-100%">
@@ -122,6 +116,12 @@ export default function UserTable() {
                 >
                   Status
                 </TableCell>
+                <TableCell
+                  isHeader
+                  className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400"
+                >
+                  Action
+                </TableCell>
               </TableRow>
             </TableHeader>
 
@@ -152,7 +152,7 @@ export default function UserTable() {
                   </TableCell>
                   <TableCell className="px-4 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
                     {(() => {
-                      let badgeColor;
+                      let badgeColor: "success" | "warning" | "error";
                       if (order.status === "Active") {
                         badgeColor = "success";
                       } else if (order.status === "Pending") {
@@ -164,6 +164,28 @@ export default function UserTable() {
                         <Badge size="sm" color={badgeColor}>
                           {order.status}
                         </Badge>
+                      );
+                    })()}
+                  </TableCell>
+                  <TableCell className="px-4 py-3 text-gray-500 text-start text-theme-sm dark:text-gray-400">
+                    {(() => {
+                      return (
+                        <>
+                          <Button
+                            size="sm"
+                            className="mr-2 custom-btn-primary"
+                            variant="success"
+                          >
+                            <PencilIcon />
+                          </Button>
+                          <Button
+                            size="sm"
+                            className="custom-btn-danger"
+                            variant="error"
+                          >
+                            <TrashBinIcon />
+                          </Button>
+                        </>
                       );
                     })()}
                   </TableCell>
