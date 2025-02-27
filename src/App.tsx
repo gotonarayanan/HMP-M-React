@@ -58,7 +58,7 @@ export default function App() {
 
             {/* Charts */}
             <Route path="/line-chart" element={<LineChart />} />
-            <Route path="/bar-chart" element={<BarChart />} />
+            <Route path="/bar-chart" element={<BarChart />} /> 
           </Route>
 
           {/* Auth Layout */}
